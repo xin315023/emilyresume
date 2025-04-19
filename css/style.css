@@ -37,16 +37,16 @@ h1,h2,h3,h4,h5,h6,p{
 .icon{
 	display: inline-block;
 	vertical-align: middle;
-	width: 24px;
-	height: 24px;
+	width: 35px;
+	height: 35px;
 	background-size: cover;
 	background-position: center;
 }
-.icon-fb{
-	background-image: url('../images/facebook1.svg');
+.icon-linkdin{
+	background-image: url('../images/linkdin.svg');
 }
-.icon-ig{
-	background-image: url('../images/ig2.svg');
+.icon-github{
+	background-image: url('../images/github.svg');
 }
 /*-------------------------*/
 /* $Button
@@ -93,6 +93,7 @@ h1,h2,h3,h4,h5,h6,p{
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: 10000;
 }
 @media (max-width: 768px){
 	.side-nav{
@@ -374,8 +375,8 @@ h1,h2,h3,h4,h5,h6,p{
 	background-color: #A593E0;
 }
 .info__text{
-	font-size: 16px;
-	line-height: 32px;
+	font-size: 22px;
+	line-height: 44px;
 }
 .info__btn{
 	margin-top: 24px;
@@ -517,7 +518,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 } */
 .parallax-container .image{
-	width: 100%;
+	width: 200%;
 	display: block;
 }
 .parallax-container .frame{
@@ -541,7 +542,7 @@ h1,h2,h3,h4,h5,h6,p{
 .parallax-container-about .frame{
 	width: 200%;
 	bottom: 0;
-	right: -40%;
+	right: -60%;
 }
 /* service */
 .parallax-container-service{

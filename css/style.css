@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .btn:hover{
 	background-color: #A593E0;
-	color: #566270;
+	color: #FFFFF3;
 }
 .icon-btn{
 	display: inline-block;
@@ -107,8 +107,8 @@ h1,h2,h3,h4,h5,h6,p{
 	width: 160px;
 	margin-top: 8px;
 	margin-bottom: 8px;
-	height: 20px;
-	line-height: 20px;
+	height: 30px;
+	line-height: 30px;
 }
 .side-nav__item span{
 	position: absolute;
@@ -117,7 +117,7 @@ h1,h2,h3,h4,h5,h6,p{
 	transition: all 0.3s;
 }
 .side-nav .active .side-nav__item span{
-	left: 32px;
+	left: 40px;
 }
 .side-nav__item:before{
 	content: "";
@@ -381,6 +381,10 @@ h1,h2,h3,h4,h5,h6,p{
 .info__btn{
 	margin-top: 24px;
 }
+.info .imageSize{
+	width: 50%;
+	display: block;
+}
 @media (max-width: 768px){
 	.info{
 		padding-top: 24px;
@@ -521,6 +525,10 @@ h1,h2,h3,h4,h5,h6,p{
 	width: 200%;
 	display: block;
 }
+.parallax-container .imageSize{
+	width: 80%;
+	display: block;
+}
 .parallax-container .frame{
 	position: absolute;
 }
@@ -532,11 +540,15 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* about */
 .parallax-container-about{
-	margin-top: 120px;
+	margin-top: 50px;
 }
 @media (max-width: 768px){
 	.parallax-container-about{
 		margin-top: 0px;
+	}
+	.parallax-container .image{
+		width: 150%;
+		display: block;
 	}
 }
 .parallax-container-about .frame{
@@ -566,4 +578,83 @@ h1,h2,h3,h4,h5,h6,p{
 	width: 48%;
 	top: -30%;
 	left: 15%;
+}
+
+/*-------------------------
+ * $project css
+---------------------------*/
+.projectCard .card {
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 1px solid #dee2e6;
+	border-radius: 1rem;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 40px;
+}
+.projectCard .body {
+	font-family: "Microsoft JhengHei", sans-serif;
+	background-color: #f9f9f9;
+	margin: 0;
+	padding: 0;
+	color: #A593E0;
+}
+
+.projectCard .container {
+	max-width: 800px;
+	margin: 40px auto;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+	padding: 40px;
+}
+
+.projectCard h1 {
+	text-align: center;
+	color: #A593E0;
+	margin-bottom: 30px;
+}
+.projectCard h2 {
+	color: #A593E0;
+	border-bottom: 2px solid #ecf0f1;
+	padding-bottom: 5px;
+	margin-top: 30px;
+}
+.projectCard ul {
+	padding-left: 20px;
+
+}
+.projectCard ul li {
+	margin: 8px 0;
+}
+
+.projectCard p {
+	line-height: 1.6;
+	margin: 12px 0;
+}
+
+.projectCard section {
+	margin-bottom: 30px;
+}
+
+/*-------------------------
+ * $Experience css
+---------------------------*/
+.Experience{
+	color: #566270;
+	line-height: 1.6;
+}
+.Experience h2 {
+	color: #A593E0;
+	padding-bottom: 5px;
+	margin-top: 30px;
+}
+.ExperienceTitle{
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+.Experiencesubtitle{
+	font-size: 18px;
+	margin-bottom: 48px;
+	padding-bottom: 24px;
 }

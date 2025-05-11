@@ -136,12 +136,12 @@ h1,h2,h3,h4,h5,h6,p{
 /* $Layout
 ---------------------------*/
 .section__inner{
-	padding-top: 80px;
+	padding-top: 100px;
 	padding-bottom: 80px;
 }
 @media (max-width: 768px){
 	.section__inner{
-		padding-top: 40px;
+		padding-top: 100px;
 		padding-bottom: 40px;
 	}
 }
@@ -229,6 +229,7 @@ h1,h2,h3,h4,h5,h6,p{
 .nav__icon-group .icon-btn:last-child{
 	margin: 0;
 }
+
 /* menu-toggle */
 .menu-toggle{
 	position: absolute;
@@ -522,7 +523,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 } */
 .parallax-container .image{
-	width: 200%;
+	width: 100%;
 	display: block;
 }
 .parallax-container .imageSize{
@@ -542,12 +543,21 @@ h1,h2,h3,h4,h5,h6,p{
 .parallax-container-about{
 	margin-top: 50px;
 }
-@media (max-width: 768px){
+@media (max-width: 960px){
 	.parallax-container-about{
-		margin-top: 0px;
+		margin: 20px;
 	}
 	.parallax-container .image{
-		width: 150%;
+		width: 100%;
+		display: block;
+	}
+}
+@media (max-width: 768px){
+	.parallax-container-about{
+		margin: 20px;
+	}
+	.parallax-container .image{
+		width: 100%;
 		display: block;
 	}
 }

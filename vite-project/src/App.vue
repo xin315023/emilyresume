@@ -1,4 +1,5 @@
 <template>
+  <Pageloading />
   <div id="app">
     <Headerbar />
     <About />
@@ -9,6 +10,7 @@
 </template>
 
 <script setup>
+import Pageloading from './components/Pageloading.vue'
 import Headerbar from './components/Header.vue'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'

@@ -16,7 +16,7 @@ body{
 	background-color: #FFFFF3;
 }
 .rellax_about{
-	padding: 100px 0px;
+	padding: 150px 0px;
 }
 /*-------------------------*/
 /* $Text
@@ -160,8 +160,8 @@ h1,h2,h3,h4,h5,h6,p{
 	width: 100%;
 	height: 85px;
 	z-index: 100;
-	/* border-radius: 50%; */
 	background-color: #566270;
+	border: #566270 2px solid;
 }
 @media (max-width: 960px){
 	.navbar--collapse{
@@ -174,16 +174,15 @@ h1,h2,h3,h4,h5,h6,p{
 	display: inline-block;
 	width: 150px;
 	height: 150px;
-	background: url('../../public/photo-output\ \(1\).jpeg');
-	/* background-repeat: no-repeat; */
+	background: url('../../public/yunshin.jpeg');
 	background-position: center;
 	background-size: contain;
-	/* float: left; */
 	transition: all 0.3s;
 	border-radius: 50%;
 	border: #566270 2px solid;
 }
 .header--scrolling .navbar__logo{
+	top: 1px;
 	width: 80px;
 	height: 80px;
 	background-color: inherit;
@@ -213,12 +212,13 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .nav__menu .menu__item{
 	display: block;
-	padding: 24px;
-	color: #E0E3DA;
+	padding: 12px 24px;
+	color: #ffffff;
 	line-height: 56px;
 	font-size: 18px;
 	transition: all 0.3s;
 	text-decoration: none;
+	text-align: center;
 }
 .nav__menu .menu__item:hover{
 	color: #A593E0;
@@ -673,4 +673,33 @@ h1,h2,h3,h4,h5,h6,p{
 	font-size: 18px;
 	margin-bottom: 48px;
 	padding-bottom: 24px;
+}
+
+/* footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer__title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.footer__icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer__icons a:hover {
+  color: #fff;
 }

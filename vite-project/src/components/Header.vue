@@ -9,14 +9,13 @@
                 </a>
                 <div id="overlay" class="nav navbar__nav popup-nav u-clearfix">
                     <ul class="menu nav__menu u-clearfix">
-                    <li><a href="#secondPage" class="menu__item">About</a></li>
-                    <li><a href="#thirdPage" class="menu__item">Service</a></li>
-                    <li><a href="#fourthPage" class="menu__item">Shop</a></li>
-                    <li><a href="#fifthPage" class="menu__item">Contact</a></li>
+                        <li><a href="#about" class="menu__item">About</a></li>
+                        <li><a href="#projects" class="menu__item">Projects</a></li>
+                        <li><a href="#experience" class="menu__item">Experience</a></li>
+                        <li><a href="#contact" class="menu__item">Contact</a></li>
                     </ul>
                     <div class="nav__icon-group">
-                    <a href="#" class="icon-btn"><i class="icon icon-fb"></i></a>
-                    <a href="#" class="icon-btn"><i class="icon icon-ig"></i></a>
+                        <a href="#" class="icon-btn"><i class="icon icon-fb"></i></a>
                     </div>
                     <a href="#!" class="popup-close"><span></span><span></span></a>
                 </div>
@@ -27,7 +26,26 @@
   </template>
   
   <script setup>
-  // 可加上 menu toggle 的邏輯
+  import { onMounted, onBeforeUnmount } from 'vue'
+
+  onMounted(() => {
+    const header = document.querySelector('.js-header')
+
+    const handleScroll = () => {
+        if (window.scrollY > 50) {
+        header.classList.add('header--scrolling')
+        } else {
+        header.classList.remove('header--scrolling')
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    // 清除事件
+    onBeforeUnmount(() => {
+        window.removeEventListener('scroll', handleScroll)
+    })
+    })
   </script>
   
   <style scoped>

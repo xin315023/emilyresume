@@ -12,9 +12,9 @@
         <div class="col-sm-6">
           <h4 class="footer__title">社群連結</h4>
           <div class="footer__icons">
-            <a href="https://github.com" target="_blank"><i class="icon icon-github"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="icon icon-linkedin"></i></a>
-            <a href="mailto:yourname@example.com"><i class="icon icon-mail"></i></a>
+            <a href="https://www.linkedin.com/in/%E7%AD%A0%E8%8A%AF-%E6%9E%97-3aa03b1b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="icon icon-linkdin"></i></a>
+            <a href="https://github.com/xin315023" target="_blank"><i class="icon icon-github"></i></a>
+            <a href="mailto:emiyxlin@gmail.com"><i class="icon icon-mail"></i></a>
           </div>
         </div>
       </div>

@@ -14,10 +14,12 @@
 					</div>
 					<div class="row">
 						<div class="nav__icon-group">
-							<a href="#" class="icon-btn">
+							<a href="https://www.linkedin.com/in/%E7%AD%A0%E8%8A%AF-%E6%9E%97-3aa03b1b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"  class="icon-btn">
 								<i class="icon icon-linkdin"></i>
-							</a
-							><a href="#" class="icon-btn">
+							</a>
+						</div>
+						<div class="nav__icon-group">
+							<a href="https://github.com/xin315023" target="_blank" class="icon-btn">
 								<i class="icon icon-github"></i>
 							</a>
 						</div>

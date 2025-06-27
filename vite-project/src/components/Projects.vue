@@ -123,7 +123,7 @@
   const frontendColors = ['#f7b267', '#6ec1e4', '#ffeb3b', '#4caf50', '#2ecc71', '#9b59b6', '#34495e']
   
   const backendLabels = [
-  	'Node.js', 'RESTful API', 'ORM（Sequelize）', 'MariaDB', 'Fastify', 'Swagger'
+  	'Node.js', 'RESTful API', 'ORM(Sequelize)', 'SQL', 'Fastify', 'Swagger'
   ]
   const backendData = [25, 20, 20, 5, 15, 15]
   const backendColors = ['#f78c6b', '#6ec1e4', '#9b59b6', '#2c3e50', '#27ae60', '#f1c40f']

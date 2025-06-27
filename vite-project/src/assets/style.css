@@ -30,6 +30,9 @@ h1,h2,h3,h4,h5,h6,p{
 	margin-bottom: 48px;
 }
 @media (max-width: 768px){
+	.rellax_about{
+		padding: 10px 0px;
+	}
 	.heading{
 		font-size: 48px;
 	}
@@ -231,12 +234,6 @@ h1,h2,h3,h4,h5,h6,p{
 	line-height: 56px;
 	float: left;
 }
-.nav__icon-group .icon-btn{
-	margin-right: 16px;
-}
-.nav__icon-group .icon-btn:last-child{
-	margin: 0;
-}
 
 /* menu-toggle */
 .menu-toggle{
@@ -390,10 +387,6 @@ h1,h2,h3,h4,h5,h6,p{
 .info__btn{
 	margin-top: 24px;
 }
-.info .imageSize{
-	width: 50%;
-	display: block;
-}
 @media (max-width: 768px){
 	.info{
 		padding-top: 24px;
@@ -404,9 +397,6 @@ h1,h2,h3,h4,h5,h6,p{
 	}
 	.info__subtitle{
 		font-size: 32px;
-		margin-bottom: 24px;
-	}
-	.info__text{
 		margin-bottom: 24px;
 	}
 }
@@ -552,7 +542,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* about */
 .parallax-container-about  .image{
-	width: 80%;
+	width: 100%;
 	display: block;
 }
 @media (max-width: 960px){
@@ -571,6 +561,12 @@ h1,h2,h3,h4,h5,h6,p{
 	.parallax-container .image{
 		/* width: 100%; */
 		display: block;
+	}
+	.parallax-container-project{
+		display: flex;
+		justify-content: center;  /* 水平置中 */
+		align-items: center;      /* 垂直置中 */
+		padding: 0;
 	}
 }
 .parallax-container-about .frame{
@@ -680,6 +676,14 @@ h1,h2,h3,h4,h5,h6,p{
 	padding-bottom: 24px;
 }
 
+@media (max-width: 768px){
+	.Experiencesubtitle{
+		font-size: 18px;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+}
+
 /* footer */
 .footer {
   background-color: #566270;
@@ -707,4 +711,17 @@ h1,h2,h3,h4,h5,h6,p{
 
 .footer__icons a:hover {
   color: #fff;
+}
+
+@media (max-width: 768px){
+	.footer {
+		background-color: #566270;
+		color: #fff;
+		padding: 30px 0;
+	}
+	.footer__list {
+		list-style: none;
+		padding-bottom: 10px;
+		line-height: 1.8;
+	}
 }

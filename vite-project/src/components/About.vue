@@ -2,7 +2,7 @@
 	<!-- Start about -->
 	<div class="section__inner">
 		<div class="container">
-			<div class="row rellax_about" data-rellax-speed="-2">
+			<div class="rellax_about" data-rellax-speed="-2">
 				<div class="col-sm-6">
 					<div class="info">
 						<h3 class="info__title">林筠芯 Emily</h3>
@@ -10,7 +10,6 @@
 							喜歡學習新知識且樂於接受挑戰的軟體工程師。</br>
 							喜歡追劇、聽音樂，工作上我注重邏輯和效率，生活中則追求簡單和快樂。
 						</p>
-						</br>
 					</div>
 					<div class="row">
 						<div class="nav__icon-group">

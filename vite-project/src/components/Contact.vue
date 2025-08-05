@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <div class="footer">
     <div class="footer__inner container">
       <div class="row">
         <div class="col-sm-6">
@@ -19,11 +19,10 @@
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <script setup>
-// 未來可加動畫或 scroll 進場效果
 </script>
 
 <style scoped>

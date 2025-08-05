@@ -11,7 +11,18 @@
 ---------------------------*/
 body{
 	font-family: 'Playfair Display', arial, sans-serif;
+	background-image: url('/background_image.png');
+	background-repeat: no-repeat;
+	background-size: auto; /* 或可省略 */
+	background-position: top left;
 }
+
+.content-wrapper {
+  background-color: rgba(255, 255, 255, 0.75); /* 白色 + 透明度 */
+  min-height: 100vh;                          /* 至少填滿螢幕 */
+  padding: 40px;                              /* 留白 */
+}
+
 .wrapper{
 	background-color: #FFFFF3;
 }
@@ -81,6 +92,7 @@ h1,h2,h3,h4,h5,h6,p{
 	-webkit-user-select: none;
 	-webkit-user-drag: none;
 	transition: all 0.3s;
+	background-color: #fff;
 }
 .btn:hover{
 	background-color: #A593E0;
@@ -158,7 +170,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 /*-------------------------*/
 /* $Header
----------------------------*/
+/---------------------------*/
 .header{
 	position: fixed;
 	top: 0;
@@ -180,7 +192,7 @@ h1,h2,h3,h4,h5,h6,p{
 	display: inline-block;
 	width: 150px;
 	height: 150px;
-	background: url('../../public/yunshin.jpeg');
+	background: url('../../public/yunshin.jpg');
 	background-position: center;
 	background-size: contain;
 	transition: all 0.3s;
@@ -221,7 +233,7 @@ h1,h2,h3,h4,h5,h6,p{
 	padding: 12px 24px;
 	color: #ffffff;
 	line-height: 56px;
-	font-size: 18px;
+	font-size: 22px;
 	transition: all 0.3s;
 	text-decoration: none;
 	text-align: center;
@@ -238,7 +250,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* menu-toggle */
 .menu-toggle{
 	position: absolute;
-	top: 0;
+	top: 10px;
 	right: 0;
 	width: 56px;
 	height: 56px;
@@ -266,7 +278,7 @@ h1,h2,h3,h4,h5,h6,p{
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #E0E3DA;
+		background-color: #566270;
 		opacity: 0;
 		visibility: hidden;
 		transition: all 0.3s;
@@ -294,7 +306,7 @@ h1,h2,h3,h4,h5,h6,p{
 	/* popup-close */
 	.popup-close{
 		position: absolute;
-		top: 0;
+		top: 10px;
 		right: 0;
 		width: 56px;
 		height: 56px;
@@ -472,24 +484,6 @@ h1,h2,h3,h4,h5,h6,p{
 	display: inline-block;
 }
 
-
-/*-------------------------*/
-/* $Footer
----------------------------*/
-.footer{
-	padding-top: 40px;
-	padding-bottom: 40px;
-	background-color: #566270;
-}
-.footer__logo{
-	display: block;
-	width: 96px;
-	height: 40px;
-	background-image: url('../../public/footer_logo.svg');
-	background-position: -9px center;	
-	background-size: cover;
-	margin-bottom: 8px;
-}
 /* list */
 .list{
 	padding-top: 24px;
@@ -500,12 +494,7 @@ h1,h2,h3,h4,h5,h6,p{
 	display: inline-block;
 	margin-bottom: 16px;
 }
-.footer__icon-group {
-	padding-top: 24px;
-}
-.footer__icon-group .icon-btn{
-	margin-right: 16px;
-}
+
 .copyright{
 	text-align: center;
 	font-size: 14px;
@@ -602,7 +591,7 @@ h1,h2,h3,h4,h5,h6,p{
  * $project css
 ---------------------------*/
 .projectCard .card {
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.75);
 	border: 1px solid #dee2e6;
 	border-radius: 1rem;
 	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
@@ -671,7 +660,7 @@ h1,h2,h3,h4,h5,h6,p{
 	margin-bottom: 16px;
 }
 .Experiencesubtitle{
-	font-size: 18px;
+	font-size: 22px;
 	margin-bottom: 48px;
 	padding-bottom: 24px;
 }
@@ -684,7 +673,55 @@ h1,h2,h3,h4,h5,h6,p{
 	}
 }
 
-/* footer */
+/*-------------------------
+ * $Cert List css
+---------------------------*/
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cert-item {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-left: 4px solid #A593E0;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.cert-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cert-item h3 {
+  font-size: 20px;
+  line-height: 42px;
+  color: #566270;
+}
+
+.cert-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/*-------------------------
+ * footer
+---------------------------*/
 .footer {
   background-color: #566270;
   color: #fff;
@@ -692,7 +729,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .footer__title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
@@ -700,11 +737,12 @@ h1,h2,h3,h4,h5,h6,p{
   list-style: none;
   padding: 0;
   line-height: 1.8;
+  font-size: 1.2rem;
 }
 
 .footer__icons a {
   margin-right: 15px;
-  font-size: 1.5rem;
+  font-size: 22px;
   color: #ccc;
   transition: color 0.3s;
 }
@@ -718,10 +756,11 @@ h1,h2,h3,h4,h5,h6,p{
 		background-color: #566270;
 		color: #fff;
 		padding: 30px 0;
+		text-align: center;
 	}
 	.footer__list {
 		list-style: none;
-		padding-bottom: 10px;
+		padding-bottom: 25px;
 		line-height: 1.8;
 	}
 }

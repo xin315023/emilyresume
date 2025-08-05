@@ -23,12 +23,12 @@
 							</a>
 						</div>
 					</div>
-					<a href="#projects" class="btn">View My Resume</a>
+					<button @click="downloadPDF()" class="btn"><b>Download My Resume (PDF)</b></button>
 				</div>
 				<div class="col-sm-2"></div>
 				<div class="col-sm-4">
 					<div class="parallax-container parallax-container-about">
-						<img class="image rellax" data-rellax-speed="2" src="../../public/home_icon.png" alt="">
+						<img class="image rellax" data-rellax-speed="2" src="/home_icon.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -39,7 +39,15 @@
   </template>
   
   <script setup>
-  
+  function downloadPDF() {
+    const base = import.meta.env.BASE_URL || '/';
+	const link = document.createElement('a');
+	link.href = `${base}Emily_Resume.pdf`;
+	link.download = 'Emily_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   </script>
   
   <style scoped>

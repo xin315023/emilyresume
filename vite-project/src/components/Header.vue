@@ -12,6 +12,7 @@
                         <li><a href="#about" class="menu__item">About</a></li>
                         <li><a href="#projects" class="menu__item">Projects</a></li>
                         <li><a href="#experience" class="menu__item">Experience</a></li>
+                        <li><a href="#cert" class="menu__item">Certificate</a></li>
                         <li><a href="#contact" class="menu__item">Contact</a></li>
                     </ul>
                     <div class="nav__icon-group">

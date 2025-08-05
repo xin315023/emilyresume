@@ -9,14 +9,15 @@ resume-vue/
 ├── public/
 │   └── images/        # 放圖片資源
 ├── src/
-│   ├── assets/        # 放 CSS
+│   ├── assets/        # 放 CSS SVG檔
 │   ├── components/
-│   │   ├── Header.vue
-│   │   ├── Hero.vue
-│   │   ├── Projects.vue
-│   │   ├── Experience.vue
+│   │   ├── About.vue
 │   │   ├── Contact.vue
-│   │   ├── Footer.vue
+│   │   ├── Experience.vue
+│   │   ├── Header.vue
+│   │   ├── Pageloading.vue
+│   │   ├── Projects.vue
+│   │   ├── SkillChart.vue
 │   ├── App.vue
 │   └── main.js
 ├── index.html

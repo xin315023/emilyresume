@@ -69,4 +69,13 @@
 	  visibility: hidden;
 	}
   }
+  @media (max-width: 768px){
+		.typing-text {
+			font-size: 1rem;
+			color: #f9f9f9;
+			font-family: 'Courier New', monospace;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+	}
   </style>
